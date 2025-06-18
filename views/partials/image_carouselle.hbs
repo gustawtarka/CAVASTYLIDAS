@@ -1,0 +1,80 @@
+<div class="ui container aligned" style="margin-top: 2em; width: 100%; height: 100%;">
+  <div class="ui segment" style="overflow: hidden; width: 100%; height: 100%; margin: 0; perspective: 1000px; background: transparent; border: none;">
+    <div class="carousel-track">
+      <div class="carousel-filmstrip">
+        <!-- Original images -->
+        <img src="/images/indexImages/athinikibeerlogo.png" class="ui image">
+        <img src="/images/indexImages/beerlist.webp" class="ui image">
+        <img src="/images/indexImages/ccdrinklogo.webp" class="ui image">
+        <img src="/images/indexImages/cclist.png" class="ui image">
+        <img src="/images/indexImages/olpbrewlogo.jpg" class="ui image">
+        <img src="/images/indexImages/olympbrewlist.png" class="ui image">
+        <img src="/images/indexImages/vikoslogo.jpg" class="ui image">
+        <img src="/images/indexImages/vikoslist.jpeg" class="ui image">
+        <img src="/images/indexImages/ezalogo.png" class="ui image">
+        <img src="/images/indexImages/ezalist.jpg" class="ui image">
+        <img src="/images/indexImages/epsalogo.png" class="ui image">
+        <img src="/images/indexImages/epsalist.webp" class="ui image">
+        <img src="/images/indexImages/monsterlogo.png" class="ui image">
+        <img src="/images/indexImages/monsterlist.jpg" class="ui image">
+
+        <!-- Duplicate images for seamless loop -->
+        <img src="/images/indexImages/athinikibeerlogo.png" class="ui image">
+        <img src="/images/indexImages/beerlist.webp" class="ui image">
+        <img src="/images/indexImages/ccdrinklogo.webp" class="ui image">
+        <img src="/images/indexImages/cclist.png" class="ui image">
+        <img src="/images/indexImages/olpbrewlogo.jpg" class="ui image">
+        <img src="/images/indexImages/olympbrewlist.png" class="ui image">
+        <img src="/images/indexImages/vikoslogo.jpg" class="ui image">
+        <img src="/images/indexImages/vikoslist.jpeg" class="ui image">
+        <img src="/images/indexImages/ezalogo.png" class="ui image">
+        <img src="/images/indexImages/ezalist.jpg" class="ui image">
+        <img src="/images/indexImages/epsalogo.png" class="ui image">
+        <img src="/images/indexImages/epsalist.webp" class="ui image">
+        <img src="/images/indexImages/monsterlogo.png" class="ui image">
+        <img src="/images/indexImages/monsterlist.jpg" class="ui image">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+.carousel-track {
+  width: 100%;
+  transform: rotateX(10deg) rotateY(20deg) translateY(150px);
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.carousel-filmstrip {
+  display: flex;
+  width: max-content;
+  animation: scrollFilm 30s linear infinite;
+}
+
+.carousel-filmstrip img {
+  flex: 0 0 auto;
+  width: 600px;
+  height: 356px;
+  margin-right: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@keyframes scrollFilm {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ui.image {
+  background: transparent;
+  width: min-content;
+  height: 360px;
+
+}
+

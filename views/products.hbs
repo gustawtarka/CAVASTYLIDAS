@@ -1,0 +1,54 @@
+
+
+<section class="ui center aligned middle aligned segment">
+    <h1 class="ui huge header index">PRODUCTS ETC.</h1>
+</section>
+
+
+<div id="index_layout">
+
+    {{> menu }}
+
+    <div class="swiper mySwiper">
+<div class="swiper-wrapper">
+  {{#each imagePaths}}
+  <div class="swiper-slide">
+    <img src="{{this}}" alt="Image" height="50%" width="30%"/>
+  </div>
+    {{else}}
+  <p>NO IMAGE FOUND</p>
+  {{/each}}
+
+</div>
+
+
+  <!-- Navigation Buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</div>
+
+{{> footer}}
